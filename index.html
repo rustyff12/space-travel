@@ -8,19 +8,18 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./assets/favicon-32x32.png"
-    />
+      href="./assets/favicon-32x32.png" />
     <!--- Google fonts --->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
     <!--- Custom CSS --->
     <title>Space Tourism Website</title>
     <link rel="stylesheet" href="./css/index.css" />
-    <script src="./js/index.js" defer></script>
+    <script src="js/navigation.js" defer></script>
+    <script src="js/tabs.js" defer></script>
   </head>
 
   <body class="home">
@@ -31,22 +30,19 @@
         <img
           src="./assets/shared/logo.svg"
           alt="space tourism logo"
-          class="logo"
-        />
+          class="logo" />
       </div>
       <button
         class="mobile-nav-toggle"
         aria-controls="primary-navigation"
-        aria-expanded="false"
-      >
+        aria-expanded="false">
         <span class="sr-only">Menu</span>
       </button>
       <nav>
         <ul
           id="primary-navigation"
           data-visible="false"
-          class="primary-navigation underline-indicators flex"
-        >
+          class="primary-navigation underline-indicators flex">
           <li class="active">
             <a
               class="uppercase text-white letter-spacing-2 ff-sans-cond"

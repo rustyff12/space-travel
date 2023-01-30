@@ -151,17 +151,19 @@
             
             <div class="flow" style="margin-bottom: 50vh; --flow-space: 4rem">
                 <!-- Tabs -->
-              <div class="tab-list underline-indicators flex">
-                <button aria-selected="true" class="uppercase text-accent ff-sans-cond letter-spacing-2">Moon</button>
-                <button aria-selected="false" class="uppercase text-accent ff-sans-cond letter-spacing-2">Mars</button>
-                <button aria-selected="false" class="uppercase text-accent ff-sans-cond letter-spacing-2">Europa</button>
-              </div> 
+                <div class="tab-list underline-indicators flex" role="tablist" aria-label="destination list">
+                  <button aria-selected="true" role="tab" aria-controls="moon-tab" class="uppercase ff-sans-cond text-accent letter-spacing-2" tabindex="0" data-image="moon-image">Moon</button>
+                  <button aria-selected="false" role="tab" aria-controls="mars-tab" class="uppercase ff-sans-cond text-accent letter-spacing-2" tabindex="-1" data-image="mars-image">Mars</button>
+                  <button aria-selected="false" role="tab" aria-controls="europa-tab" class="uppercase ff-sans-cond text-accent letter-spacing-2" tabindex="-1" data-image="europa-image">Europa</button>
+                  <button aria-selected="false" role="tab" aria-controls="titan-tab" class="uppercase ff-sans-cond text-accent letter-spacing-2" tabindex="-1" data-image="titan-image">Titan</button>
+              </div>
                 
                 <!-- Dots -->
-                <div class="dot-indicators flex">
-                  <button aria-selected="true"><span class="sr-only">Slide title</span></button>
-                  <button aria-selected="false"><span class="sr-only">Slide title</span></button>
-                  <button aria-selected="false"><span class="sr-only">Slide title</span></button>
+                <div class="dot-indicators flex" role="tablist" aria-label="destination list">
+                  <button aria-selected="true" role="tab" aria-controls="commander-tab" tabindex="0" data-image="commander-image"><span class="sr-only">The commander</span></button>
+                  <button aria-selected="false" role="tab" aria-controls="specialist-tab" tabindex="-1" data-image="specialist-image"><span class="sr-only">The mission specialist</span></button>
+                  <button aria-selected="false" role="tab" aria-controls="pilot-tab" tabindex="-1" data-image="pilot-image"><span class="sr-only">The pilot</span></button>
+                  <button aria-selected="false" role="tab" aria-controls="engineer-tab" tabindex="-1" data-image="engineer-image"><span class="sr-only">The crew engineer</span></button>
                 </div> 
                 
                 <!-- Numbers -->
