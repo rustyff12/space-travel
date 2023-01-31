@@ -514,6 +514,24 @@ body {
 		background-image: url(../assets/crew/background-crew-desktop.jpg);
 	}
 }
+
+/* --- Technology --- */
+.technology {
+	background-image: url(../assets/technology/background-technology-mobile.jpg);
+}
+
+@media (min-width: 35em) {
+	.technology {
+		background-image: url(../assets/technology/background-technology-tablet.jpg);
+	}
+}
+
+@media (min-width: 45em) {
+	.technology {
+		background-image: url(../assets/technology/background-technology-desktop.jpg);
+	}
+}
+
 /* ===================== */
 /* layout*/
 /* ===================== */
@@ -634,6 +652,10 @@ body {
 	color: hsl(var(--clr-white) / 0.5);
 }
 
+.technology-image-2 {
+	display: none;
+}
+
 @media (min-width: 35em) {
 	.numbered-title {
 		justify-self: start;
@@ -718,11 +740,12 @@ body {
 		max-width: 100%;
     } 
 
-	
+	.technology-image-2 {
+		display: none;
+	}
 	  
 	/* .number-indicators {
 		flex-direction: column;
 	} */
 }
-
 
